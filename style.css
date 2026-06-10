@@ -12,7 +12,7 @@ body {
     display: flex;
     gap: 20px;
     
-    background-color: gray;
+    background-color: rgb(75, 75, 75);
     color: white;
 
     padding: 20px;
@@ -20,3 +20,101 @@ body {
 
     box-shadow: 0 4px 8px black;
 }
+
+.display {
+    width: 180px; /*largura do elemento*/
+    padding: 15px; /* distancia do conteudo para a borda do elemento*/
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center; /*centraliza o texto*/
+    display: flex; /* altera o tipo de posicionamento dos elementos*/
+    flex-direction: column; /*muda o eixo padrao do display flex*/
+    align-items: center; /*alinhamento vertical*/
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+
+        object-fit: cover;
+    }
+
+}
+
+.num-input {
+    width: 80px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    background-color: rgb(168, 165, 165);
+    border: none;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.btn, .btn-action  {
+    padding: 10px;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn {
+    background-color: grey;
+    font-size: 1em; 
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: rgb(189, 189, 189);
+    scale: 1.1;
+}
+
+.btn-action-group {
+    display: flex;
+    gap: 5px;
+
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.btn-action {
+    font-size: 0.9em;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.btn-action:hover{
+    background-color: rgb(189, 189, 189);
+    scale: 1.1;
+
+}
+
+.branco {
+    background-color: white;
+    color: black;
+}
+
+.corrige {
+    background-color: rgb(212, 10, 10);
+    color: black;
+}
+
+.confirma {
+    background-color: rgb(0, 255, 0);
+    color: white;
+
+}
+
+
