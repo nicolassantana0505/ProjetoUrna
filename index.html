@@ -11,7 +11,7 @@
 <body>
     <div class="urna">
         <div class="display">
-            <input type="text" id="numIput" class="num-input" placeholder="--" maxlength="2" readonly>
+            <input type="text" id="numInput" class="num-input" placeholder="--" maxlength="2" readonly>
             <div id="candidatoInfo">
                 <img src="https://images.seeklogo.com/logo-png/2/2/cbf-confederacao-brasileira-de-futebol-logo-png_seeklogo-27315.png"
                     alt="Brasão do Brasil ">
@@ -21,23 +21,23 @@
         <div class="painel-botoes">
             <div class="buttons">
              <button class="btn" onclick="addNumber(1)">1</button>
-             <button class="btn" onclick="">2</button>
-             <button class="btn" onclick="">3</button>
-             <button class="btn" onclick="">4</button>
-             <button class="btn" onclick="">5</button>
-             <button class="btn" onclick="">6</button>
-             <button class="btn" onclick="">7</button>
-             <button class="btn" onclick="">8</button>
-             <button class="btn" onclick="">9</button>
+             <button class="btn" onclick="addNumber(2)">2</button>
+             <button class="btn" onclick="addNumber(3)">3</button>
+             <button class="btn" onclick="addNumber(4)">4</button>
+             <button class="btn" onclick="addNumber(5)">5</button>
+             <button class="btn" onclick="addNumber(6)">6</button>
+             <button class="btn" onclick="addNumber(7)">7</button>
+             <button class="btn" onclick="addNumber(8)">8</button>
+             <button class="btn" onclick="addNumber(9)">9</button>
             
              <div></div>
-            <button class="btn" onclick="">0</button>
+            <button class="btn" onclick="addNumber(0)">0</button>
             <div></div>
          </div>    
          <div class="btn-action-group">
-              <button class="btn-action branco">Br</button>
-              <button class="btn-action corrige">Corrige</button>
-              <button class="btn-action confirma">Confirma</button>
+              <button class="btn-action branco"onclick="votoBranco()">Br</button>
+              <button class="btn-action corrige"onclick="corrige()">Corrige</button>
+              <button class="btn-action confirma"onclick="confirma()">Confirma</button>
          </div>   
          </div>  
     </div>
